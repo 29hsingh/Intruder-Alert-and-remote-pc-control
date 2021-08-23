@@ -85,7 +85,7 @@ def run():
             cmd = get_command()
             if 'shut down' in str(cmd).lower():
                 s.send_message(mark)
-                # os.system('shutdown -s')  
+                os.system('shutdown -s')  
             elif 'warn' in str(cmd).lower():
                 s.send_message(mark)
                 os.system("notepad.exe warning.txt")
